@@ -32,5 +32,8 @@
   "private": true,
   "jest": {
     "preset": "jest-expo"
+  },
+  "detox": {
+    "test-runner": "jest"
   }
 }
