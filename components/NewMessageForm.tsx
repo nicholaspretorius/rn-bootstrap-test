@@ -11,7 +11,7 @@ class NewMessageForm extends Component {
     this.setState({ inputText: text });
   };
 
-  handlePress = () => {
+  sendHandler = () => {
     this.setState({ inputText: "" });
   };
 
@@ -21,7 +21,7 @@ class NewMessageForm extends Component {
       <View>
         <Text>Message: </Text>
         <TextInput value={inputText} testID="messageText" onChangeText={this.handleTextChange} />
-        <Button testID="sendButton" title="Send" onPress={this.handlePress} />
+        <Button testID="sendButton" title="Send" onPress={this.sendHandler} />
       </View>
     );
   }
