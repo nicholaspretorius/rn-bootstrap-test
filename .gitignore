@@ -11,7 +11,7 @@ npm-debug.*
 web-build/
 web-report/
 instructions.md
-
+bin/
 # macOS
 .DS_Store
 
