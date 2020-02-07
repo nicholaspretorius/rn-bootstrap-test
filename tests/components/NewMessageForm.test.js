@@ -16,7 +16,7 @@ describe("NewMessageForm", () => {
     });
 
     it("clears the message field", () => {
-      expect(getByTestId("messagetext").props.value).toEqual("");
+      expect(getByTestId("messageText").props.value).toEqual("");
     });
   });
 });
