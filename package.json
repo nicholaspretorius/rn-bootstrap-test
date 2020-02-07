@@ -5,7 +5,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "node_modules/.bin/jest test/**/*.spec.js",
+    "test": "node_modules/.bin/jest tests/**/*.test.js",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -31,7 +31,10 @@
   },
   "private": true,
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
   },
   "detox": {
     "test-runner": "jest",
